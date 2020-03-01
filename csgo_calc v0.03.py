@@ -7,6 +7,7 @@ while True:
     track = input('Enter "win" or "lose". Enter "done" when finished. ')
     if track not in {'win', 'lose', 'done'}:
       print('!===== Not a valid entry =====!')
+      print('')
     if track == 'win':
         wins += 1
         count += 1
