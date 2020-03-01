@@ -15,8 +15,8 @@ while True:
         loses += 1
         count += 1
     elif track == 'done':
-        print('You won ', wins, 'times')
-        print('You lost ', loses, 'times')
+        print('You won ', wins, 'games')
+        print('You lost ', loses, 'games')
 
         def average(wins, loses):
             return (wins + loses) / 2
