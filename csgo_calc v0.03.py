@@ -3,7 +3,7 @@ loses = 0
 count = 0
 print('     |========== CS:GO Calculator ==========|') # made for simple tracking for overall win/lose ratios.
 print('')
-user_name = input('Please enter a username: ')
+user_name = input('Please enter a username: ') # gets printed when entering done
 while True:
     track = input('Enter "win" or "lose". Enter "done" when finished. ')
     if track not in {'win', 'lose', 'done'}:
@@ -21,7 +21,7 @@ while True:
         print('You won ', wins, 'games')
         print('You lost ', loses, 'games')
 
-        def average(wins, loses):
+        def average(wins, loses): # used to find average between both counts
             return (wins + loses) / 2
 
         avg = average(wins, loses)
