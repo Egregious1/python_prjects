@@ -26,6 +26,7 @@ while True:
 
         avg = average(wins, loses)
         print('your average was: ', avg, "in", count, 'games!')
+        print('')
         if input('Do you want to start again y/n: ') != 'y': # anything other than y stops program.
           print('')
           print('     |========== Restart Program ===========|')
