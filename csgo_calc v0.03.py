@@ -1,6 +1,8 @@
 wins = 0
 loses = 0
 count = 0
+ovr_wins = []
+ovr_loses = []
 print('     |========== CS:GO Calculator ==========|') # made for simple tracking for overall win/lose ratios.
 print('')
 user_name = input('Please enter a username: ') # gets printed when entering done
@@ -12,17 +14,21 @@ while True:
     if track == 'win':
         wins += 1
         count += 1
+        ovr_wins.append(track)
     elif track == 'lose':
         loses += 1
         count += 1
+        ovr_loses.append(track)
     elif track == 'done': # wrap up returns games won/lost and an overall average
         print('')
-        print(user_name + ' today:')
+        print(user_name + ' this time:')
         print('You won ', wins, 'games')
         print('You lost ', loses, 'games')
+        wins = 0
+        loses = 0
 
-        def average(wins, loses): # used to find average between both counts
-            return (wins + loses) / 2
+        def average(ovr_wins, ovr_loses): # used to find average between both counts
+            return (ovr_loses + ovr_wins) / 2
 
         avg = average(wins, loses)
         print('your average was: ', avg, "in", count, 'games!')
