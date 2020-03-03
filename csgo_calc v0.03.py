@@ -3,7 +3,7 @@ loses = 0
 count = 0
 ovr_wins = []
 ovr_loses = []
-print('     |========== CS:GO Calculator ==========|') # made for simple tracking for overall win/lose ratios.
+print('|========== CS:GO Calculator ==========|') # made for simple tracking for overall win/lose ratios.
 print('')
 user_name = input('Please enter a username: ') # gets printed when entering done
 while True:
@@ -35,5 +35,5 @@ while True:
         print('')
         if input('Do you want to start again y/n: ') != 'y': # anything other than y stops program.
           print('')
-          print('     |========== Restart Program ===========|')
+          print('|========== Restart Program ===========|')
           break
