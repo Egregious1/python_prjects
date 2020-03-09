@@ -5,9 +5,11 @@ ovr_wins = []
 ovr_loses = []
 maps = ['dust2', 'inferno', 'train', 'mirage', 'nuke', 'overpass', 'vertigo']
 
-print('|========== CS:GO Calculator ==========|')  # made for simple tracking for overall win/lose ratios.
+# made for simple tracking for overall win/lose ratios.
+print('|========== CS:GO Calculator ==========|')
 print('')
-user_name = input('Please enter a username: ')  # gets printed when entering done
+# gets printed when entering done
+user_name = input('Please enter a username: ')
 while True:
     map_name = str(input('What map are you playing? '))
     if map_name in maps:
@@ -39,14 +41,15 @@ while True:
         wins = 0
         loses = 0
 
-        def average(ovr_wins, ovr_loses):  # used to find average between both counts it stopped working......what the flying fuck!
+        # used to find average between both counts it stopped working......what the flying fuck!
+        def average(ovr_wins, ovr_loses):
             return (loses + wins) / 2
 
         avg = average(wins, loses)
         print('your average was: ', avg, "in", count, 'games!')
         print('')
-        if input('Do you want to start again y/n: ') != 'y':  # anything other than y stops program.
+        # anything other than y stops program.
+        if input('Do you want to start again y/n: ') != 'y':
             print('')
             print('|========== Restart Program ===========|')
             break
-
